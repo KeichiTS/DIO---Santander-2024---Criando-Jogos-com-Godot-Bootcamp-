@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://diwj7f658d0a2"]
+
+[ext_resource type="Texture2D" uid="uid://beacwif2v8ttf" path="res://addons/Tiny Swords/Terrain/Ground/Shadows.png" id="1_jyw83"]
+[ext_resource type="Texture2D" uid="uid://bhg740awgjgyy" path="res://addons/Tiny Swords/Terrain/Ground/Tilemap_Elevation.png" id="2_s7lh6"]
+[ext_resource type="Texture2D" uid="uid://e3lf8y6ejv77" path="res://addons/Tiny Swords/Terrain/Ground/Tilemap_Flat.png" id="3_6hnlv"]
+[ext_resource type="Texture2D" uid="uid://bdm1i10rfmh2m" path="res://addons/Tiny Swords/Terrain/Bridge/Bridge_All.png" id="4_ct815"]
+[ext_resource type="Texture2D" uid="uid://ny6njnasjmxx" path="res://addons/Tiny Swords/Terrain/Water/Water.png" id="5_4km2p"]
+[ext_resource type="Texture2D" uid="uid://cuemeonro54xm" path="res://addons/Tiny Swords/Terrain/Water/Rocks/Rocks_03.png" id="6_8hirw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Shadows" type="Sprite2D" parent="."]
+position = Vector2(127, 158)
+texture = ExtResource("1_jyw83")
+
+[node name="TilemapElevation" type="Sprite2D" parent="."]
+position = Vector2(88, 101)
+texture = ExtResource("2_s7lh6")
+
+[node name="TilemapFlat" type="Sprite2D" parent="."]
+position = Vector2(235, 158)
+texture = ExtResource("3_6hnlv")
+
+[node name="BridgeAll" type="Sprite2D" parent="."]
+position = Vector2(-51, 139)
+texture = ExtResource("4_ct815")
+
+[node name="Water" type="Sprite2D" parent="."]
+position = Vector2(-67, 275)
+texture = ExtResource("5_4km2p")
+
+[node name="Rocks03" type="Sprite2D" parent="."]
+position = Vector2(100, 113)
+texture = ExtResource("6_8hirw")

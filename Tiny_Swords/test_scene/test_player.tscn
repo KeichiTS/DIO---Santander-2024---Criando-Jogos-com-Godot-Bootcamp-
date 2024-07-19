@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://ptulitv1pi5v"]
+
+[ext_resource type="Texture2D" uid="uid://bqkj5w5tihnu" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Blue/Torch_Blue.png" id="1_i26b4"]
+[ext_resource type="PackedScene" uid="uid://bb57gt2gkqb4w" path="res://player/player.tscn" id="2_ggx81"]
+[ext_resource type="PackedScene" uid="uid://cxlk4l3ivel8f" path="res://enemies/pawn.tscn" id="3_ypouk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TorchBlue" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(692, 523)
+texture = ExtResource("1_i26b4")
+
+[node name="Col" type="Label" parent="TorchBlue"]
+offset_left = -596.0
+offset_top = -488.0
+offset_right = -16.0
+offset_bottom = -465.0
+scale = Vector2(2.04, 1.96)
+text = "0                      1                    2                 3                      4                      5                     6"
+
+[node name="Lin" type="Label" parent="TorchBlue"]
+offset_left = -746.0
+offset_top = -424.0
+offset_right = -727.0
+offset_bottom = -263.0
+scale = Vector2(2.04, 1.96)
+text = "0 
+
+
+
+1 
+
+
+2 
+
+
+
+3 
+
+
+
+4"
+autowrap_mode = 3
+
+[node name="Label1" type="Label" parent="TorchBlue"]
+offset_left = 672.0
+offset_top = -403.0
+offset_right = 712.0
+offset_bottom = -380.0
+text = "Idle
+"
+
+[node name="Label2" type="Label" parent="TorchBlue"]
+offset_left = 667.0
+offset_top = -209.0
+offset_right = 707.0
+offset_bottom = -186.0
+text = "run
+"
+
+[node name="Label3" type="Label" parent="TorchBlue"]
+offset_left = 611.0
+offset_top = -44.0
+offset_right = 714.0
+offset_bottom = -21.0
+text = "attack_side"
+
+[node name="Label4" type="Label" parent="TorchBlue"]
+offset_left = 606.0
+offset_top = 158.0
+offset_right = 709.0
+offset_bottom = 181.0
+text = "attack_down
+"
+
+[node name="Label5" type="Label" parent="TorchBlue"]
+offset_left = 638.0
+offset_top = 383.0
+offset_right = 753.0
+offset_bottom = 406.0
+text = "attack_up"
+
+[node name="Player" parent="." instance=ExtResource("2_ggx81")]
+position = Vector2(566, 264)
+
+[node name="Pawn" parent="." instance=ExtResource("3_ypouk")]
+position = Vector2(246, 222)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_ypouk")]
+position = Vector2(767, 431)
